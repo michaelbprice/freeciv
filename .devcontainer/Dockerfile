@@ -38,4 +38,5 @@ RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
         libsdl2-gfx-dev \
         libsdl2-image-dev \
         libsdl2-ttf-dev \
-        libmysqlclient-dev
+        libmysqlclient-dev \
+        xauth x11-apps

@@ -21,6 +21,21 @@ RUN if [ "${REINSTALL_CMAKE_VERSION_FROM_SOURCE}" != "none" ]; then \
 # [Optional] Uncomment this section to install additional packages.
 RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
     && apt-get -y install --no-install-recommends \
-    libicu-dev libtool libcurl4 libsqlite3-dev \
-    gettext autoconf automake \
-    qt6-base-dev libsdl2-dev
+        gettext \
+        libgtk-3-dev \
+        libcurl4-openssl-dev \
+        libtool \
+        automake \
+        autoconf \
+        autotools-dev \
+        language-pack-en \
+        python3.10 \
+        liblzma-dev \
+        libicu-dev \
+        libsqlite3-dev \
+        qt6-base-dev \
+        libsdl2-mixer-dev \
+        libsdl2-gfx-dev \
+        libsdl2-image-dev \
+        libsdl2-ttf-dev \
+        libmysqlclient-dev
